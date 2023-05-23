@@ -34,6 +34,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
 	display: flex;
 	justify-content: space-between;
 	height: var(--nav-height);
@@ -131,16 +132,16 @@ body {
 	display: block;
 }
 
-.banner {
+.main-banner {
 	position: relative;
 	margin-top: 4.6rem;
 }
 
-.banner__image {
+.main-banner__image {
 	width: 100%;
 }
 
-.banner__description {
+.main-banner__description {
 	position: absolute;
 	bottom: 5.5rem;
 	right: 0;
@@ -158,5 +159,71 @@ body {
 }
 
 .description__message {
+	font-size: 1.5rem;
 	color: #ffffff;
+}
+
+.main-description {
+	padding: 0 23rem;
+	margin-top: 8.5rem;
+}
+
+.main-description__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-description__title {
+	font-size: 3rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+}
+
+.main-description__quote {
+	margin-top: 2.8rem;
+	opacity: 0.6;
+}
+
+.main-description__quote::first-letter {
+	text-transform: capitalize;
+}
+
+.main-description__body {
+	margin-top: 2.5rem;
+}
+
+.main-description__text {
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+	text-align: justify;
+}
+
+.main-description__footer {
+	margin-top: 7rem;
+}
+
+.main-description__footer {
+	margin-bottom: 15rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-description__member-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.member-card__name {
+	font-weight: 100;
+	text-transform: capitalize;
+}
+
+.member-card__image {
+	margin-top: 2rem;
+	width: 15.5rem;
+	height: 15.5rem;
+	border-radius: 0.5rem;
 }
